@@ -11,6 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -58,6 +59,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "preserveSymlinks": true,
             "browserTarget": "angular-app:build"
           },
           "configurations": {
@@ -116,6 +118,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
+            "preserveSymlinks": true,
             "outputPath": "dist/server",
             "main": "src/main.server.ts",
             "tsConfig": "src/tsconfig.server.json"
