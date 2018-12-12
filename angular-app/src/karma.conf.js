@@ -22,11 +22,11 @@ module.exports = function (config) {
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular', 'sinon'],
     plugins: [
-      require('karma-jasmine'),
-      require('karma-chrome-launcher'),
-      require('karma-jasmine-html-reporter'),
-      require('karma-coverage-istanbul-reporter'),
       require('@angular-devkit/build-angular/plugins/karma'),
+      require('karma-chrome-launcher'),
+      require('karma-coverage-istanbul-reporter'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-jasmine'),
       require('karma-sinon')
     ],
     client: {
